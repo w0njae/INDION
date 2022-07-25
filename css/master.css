@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{padding:0; margin:0;}
+*{font-family: 'Noto Sans KR', sans-serif;}
+body {width:100%;
+    color:#fff;
+    background:#000;
+    }
+li{list-style: none;}
+a{text-decoration:none;color:#fff;}
+ul{list-style-type:none; margin:0; padding:0;}
+    
+    #wrapper{
+        width:1440px;
+        margin:0 auto;
+    }
+    #loginpage #header, #signuppage #header{position:relative;}
+    #mainpage #wrapper{overflow:hidden;}
+    #mainpage #header {
+        width:1217px;
+        height:110px;
+        background:black;
+        float:right;
+        font-size:15px;
+        border-bottom:1px solid #565ca8;
+    }
+    #mainpage #nav{
+        height: 100%;
+        float:left;
+        position:fixed;
+        border-right:1px solid #565ca8;
+        font-weight: 900;
+    }
+    #mainpage #contents{
+        width:1209px;
+        float:right;
+    }
+
+    #loginpage #contents{font-size:13px;}
+    #signuppage #contents{font-size:16px; }
+    #mainpage #footer{margin-top:80px; margin-bottom:80px; font-size:13px; color:#888888;}
+    #mainpage h1{margin:50px 30px;}
+    h1>a:hover img{ transform: scale(1.1) ;}
+    h1>a>img{transition:0.5s;}
+
+    #sound-bar{float:left; position:fixed; left:0; bottom:0;border-top:1px solid #565ca8; margin:0; padding:0; width:100%; background:#000;}
+
+    .more{float:right; margin:0 10px 0 0;font-size:13px;}
+    .more a:hover{color:#565ca8;}
+    /* header부분 */
+    #mainpage input[type="search"]{width:350px; float:left; background:#403f3f; position: relative; top:35px; left:70px;
+    line-height:40px; text-indent:10px; border:none; font-size:15px; color:#ccc;}
+    #mainpage input[type="image"]{position:relative; top:45px; left:40px;}
+    .login{
+        float:right;
+        position:relative;
+        top:15px; right:70px;
+        background:#403f3f;
+        color:#ccc;
+        padding:10px;
+        border-radius: 5px;
+        }
+    .login:hover{color:#565ca8}
+
+    /* nav 부분 */
+    .menu{width:223px;
+        font-size:18px;
+        }
+    .menu>ul{width:150px; margin:0 auto;}
+    .menu>ul>li{font-size:18px; display:inline-block; line-height:50px;}
+    .menu>ul>li a:hover{
+        background: linear-gradient(to right bottom, #565ca8, #985ea3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    .menu>ul>li span{vertical-align: middle; display:inline-block; text-align:center; padding-left:10px;}
+    .menu>ul>li a{display:block;}
+    .menu>ul>li img{vertical-align: middle;}
+    
+    .menu>ul>li>ul{transition: height 0.4s; transition-timing-function: linear; font-size:15px; display:block; text-align:center; width:150px; height:0px; overflow:hidden;}
+    .menu>ul>li:hover ul{height:200px;}
+    .menu>ul>li>ul>li>a{display:block;}
+
+    
+    /* contents 부분 */
+    #main-content{margin:0 auto; width:1077px; margin-top:70px; position:relative;}
+    /* 최신음악 */
+    .new-music{
+        overflow:hidden;
+        }
+    
+    .new-music>ul>li{float:left; font-size:15px; margin: 30px 44px 20px 0px;}
+    .new-music>ul>li:last-child{margin-right:0px; margin-top:11px;}
+    .new-music>ul>li>a:hover p{color:#985ea3;}
+    .new-music>ul>li:nth-child(1):hover{background:url(../images/최신음악-1\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(2):hover{background:url(../images/최신음악-2\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(3):hover{background:url(../images/최신음악-3\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(4):hover{background:url(../images/최신음악-4\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(5):hover{background:url(../images/최신음악-5\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li>a:hover img{opacity: 0.0;}
+    
+    .new-music ul p{text-align:center; margin:0;}
+    .new-music li p:nth-child(3){color:#bdbdbd; font-size:13px;}
+    .new-music>ul{padding:0px;}
+
+    /* 차트 */
+    .chart{overflow:hidden; margin-top:30px;}
+    .chart>div{margin-top:30px;}
+    .chart a{}
+    
+    .chart li{border-bottom:1px solid #565ca8; font-size:15px; line-height:15px;}
+    .chart li span{padding-left:5px;}
+    .chart li:hover .rank{
+        background: linear-gradient(to right bottom, #565ca8, #985ea3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .chart li:hover img{opacity: 0.6;}
+    
+    .chart-box1{float:left;width:333px;}
+    .chart-box2{float:left;width:333px; margin-left:40px;}
+    .chart-box3{float:right;width:333px; margin-top:11px !important;}
+    
+    .chart img{vertical-align:sub;}
+    .chart span{font-size:18px; display:inline-block; text-align:center; vertical-align:super;}
+
+    .rank {display:inline-block; margin:10px;}
+    .rank p{padding:0; margin:0; display:block; text-align:left;}
+    .rank p:nth-child(2){color:#ccc; font-size:13px;}
+
+    /*장르*/
+    #sub-content{overflow:hidden; margin-top:60px;}
+    .genre{float:left; width:538px;}
+    .genre ul{margin-top:30px;}
+    .genre ul li{float:left;font-size:17px; width:90px; margin:15px 5px;}
+    .genre ul li:hover{background-color: rgba(100, 100, 100, 1);}
+    .genre ul li a {display:block; text-indent:10px;padding:5px;}
+    .genre ul li:nth-child(1){border-left:3px solid #ff0000;}
+    .genre ul li:nth-child(2){border-left:3px solid #f79789;}
+    .genre ul li:nth-child(3){border-left:3px solid #57a3ee;}
+    .genre ul li:nth-child(4){border-left:3px solid #7c1c32;}
+    .genre ul li:nth-child(5){border-left:3px solid #8cf7e7;}
+    .genre ul li:nth-child(6){border-left:3px solid #4e2a4b;}
+    .genre ul li:nth-child(7){border-left:3px solid #4b3049}
+    .genre ul li:nth-child(8){border-left:3px solid #6b6b6b;}
+    .genre ul li:nth-child(9){border-left:3px solid #f8ab08;}
+    .genre ul li:nth-child(10){border-left:3px solid #737943;}
+    .genre ul li:nth-child(11){border-left:3px solid #f16d2a;}
+    .genre ul li:nth-child(12){border-left:3px solid #ffe718;}
+    .genre ul li:nth-child(13){border-left:3px solid #295ebb;}
+    .genre ul li:nth-child(14){border-left:3px solid #ff68a2;}
+    .genre ul li:nth-child(15){border-left:3px solid #00ae69;}
+    .genre ul li:nth-child(16){border-left:3px solid #bc8c4b;}
+    .genre ul li:nth-child(17){border-left:3px solid #9074ee;}
+    .genre ul li:nth-child(18){border-left:3px solid #ffc3ec;}
+    .genre ul li:nth-child(19){border-left:3px solid #72a8b4;}
+    .genre ul li:nth-child(20){border-left:3px solid #11dae7;}
+
+    
+
+    /*뮤지션*/
+    .musician{float:left;width:538px;}
+    .musicianbox{margin-top:30px;}
+    .musicianbox>div{float:left; border:2px solid #565ca8; width:150px; margin-right:38px; font-size:14px;}
+    .musicianbox>div:last-child{margin-right:0px;}
+    .musicianbox>div span{margin-left:5px;}
+    .musicianbox>div>div{float:right;}
+    .musicianbox>div>a:hover img{opacity: 0.6;}
+
+
+    .musicianbox>div>a:hover img{opacity: 0.6;}
+    
+    .musicianbox>div>div img{margin:3px 3px;}
+    .musicianbox>div>ul {width:135px;margin:0 auto; overflow:hidden;}
+    .musicianbox>div>ul li{float:left; margin:6px 5px; border:1px solid #565ca8; padding:2px; border-radius: 10px; background:#565ca8;}
+    .musicianbox>div>ul li:hover{background:#985ea3; border:1px solid #985ea3; padding:2px; border-radius: 10px;}
+
+    /*인디온 소개*/
+    .introduce {margin-top:50px; }
+    .introduce div>a:hover img{transform: scale(1.05);}
+    .introduce div>a>img{ transition:0.5s;}
+
+    /*사운드 바*/
+    .music{float:left; width:450px; overflow:hidden; position:relative; font-size:15px; margin:3px;}
+    
+    .music>a{float:left;}
+    .music>a>img{margin-left:15px;}
+    .music>p{text-align:left; text-indent: 15px; line-height: 25px;}
+    .music>ul{position:absolute; bottom:0%; right:0%;}
+    .music>ul>li{float:left; margin:4px;}
+    .music>p:nth-child(3){color:#ccc; font-size:13px;}
+
+    
+    .play{margin:3px auto; width:620px;}
+    .play>ul{margin:0 auto; width:560px;line-height:50px;}
+    .play>ul>li{float:left; display:inline-block; margin:0 40px;}
+    .play>ul>li>a img{vertical-align: middle;}
+
+    .option{float:right; width:350px; margin:3px 10px; font-size:13px;}
+    .option>ul{float:right; line-height: 50px;}
+    .option>ul>li{float:left; display:inline-block; margin:0 15px; }
+    .option>ul>li:nth-child(2){margin-right:0;}
+    .option>ul>li:nth-child(3){margin-left:3px;}
+    .option>ul li p{display: inline-block; color:#ccc;}
+    .option>ul li img{vertical-align: middle;}
+    .option>ul li p span{color:#565ca8;}
+    
+
+#signuppage #header a{display:block;}
+#signuppage #header p{position:absolute; top:-110%; right:31%; color:#ccc;}
+#signuppage #header p:hover{color:#565ca8;}
+#signuppage h1, #loginpage h1{width:162px; height:46px; margin:0 auto; margin-top: 110px; }
+/*콘텐츠*/
+.report span{color:#985ea3; font-weight: 900;}
+.report p{font-size:12px; text-align:center; margin-left:14%; color:#888;}
+#signuppage form{
+		width:500px;
+		padding:20px;
+		margin: 60px auto;
+		}
+
+#signuppage input{margin:20px 0; background:#000; border:1px solid #565ca8; color:#fff;}
+#signuppage .report{color:#ccc;}
+#signuppage .report input[type="button"]{width:70px; height:40px; margin-left:10px; background:#565ca8; border-radius:10%}
+#signuppage .report input[type="button"]:hover{background:#985ea3; border:1px solid #985ea3;}
+
+#signuppage input[type="text"],
+#signuppage input[type="password"]{
+    text-indent:10px;
+		width:300px;
+        height:30px;
+		padding:5px 0;
+        box-shadow:3px 3px 5px #565ca8; }
+#signuppage .formsection:nth-child(7) input[type="text"]{width:100px; box-shadow:none;}
+#signuppage .agree input[type="submit"]{font-size:18px; width:480px; border:2px solid #565ca8; height:70px; text-indent:0; border-radius: 10px;}
+#signuppage .agree input[type="submit"]:hover{background:#565ca8;}
+#signuppage input[type="radio"]{margin:3px;}
+#signuppage input[type="checkbox"]:hover{opacity: 0.8;}
+#signuppage label:first-child{
+						color:#fff;
+						width:120px;
+                        display:inline-block;
+                    text-align:right;
+                    margin-right:10px;}
+.agree{font-size:15px; border-top:1px solid #888; padding:10px; margin-top:40px;}
+.agree span{color:#985ea3; text-decoration:underline;font-weight: 900;}
+
+.provision{text-align:center;}
+
+.provision p{margin:20px auto; overflow-y:scroll; width:500px; height:150px; font-size:14px; color:#ccc; border:1px solid #888;}
+/*푸터*/
+        #mainpage #footer{float:left;}
+        #footer>div{margin:0 auto; width:640px;}
+        #footer ul>li{float:left; margin:1px;}
+        #footer p{clear:both; padding:3px 8px;}
+        #footer>div>ul>li>a{position:relative; padding:8px; color:#888888;}
+
+        #footer>div>ul>li>a:after{
+            width:1px;
+            height:15px;
+            background:#888;
+            display:block;
+            position:absolute;
+            content:'';
+            left:0;
+            top:10px;
+            }
+        #footer>div>ul>li:first-child>a:after{width:0;}
+        #footer{margin-top:80px; font-size:13px; color:#888888;margin-bottom:30px;}
+
+        #sub-page  #footer {
+        float: left;
+        margin-top: 80px;
+        font-size: 13px;
+    }
+        #sub-page #footer p{color:#888888;}
+
+        #loginpage select{position:absolute; top:-100%; right:30%; background:#000; color:#fff;}
+        /*콘텐츠*/
+        #loginpage form{width:350px;  margin:0 auto;}
+        #loginpage .input-box{width:100%; margin-top:100px;}
+        #loginpage .input-box>input{
+            width:100%;
+            height:50px;
+            background:#000;
+            border:1px solid #565ca8;
+            box-shadow:3px 3px 5px #565ca8;
+            text-indent:10px;
+        }
+        #loginpage .input-box>input:last-child{margin-top:15px;}
+        #loginpage .input-box>input[type="text"],.input-box>input[type="password"]{color:#ccc;}
+
+        .login-box{margin-top:10px;}
+        .login-box>input[type="checkbox"]{color:#000;}
+        .login-box>input[type="submit"]{width:100%; height:50px; margin-top:30px; font-size:14px; color:#fff; background:#565ca8; border:none;}
+        .login-box>input[type="submit"]:hover{background:#985ea3;}
+
+        .line-box{margin-top:10px;}
+        .line-box a{padding:8px; }
+        .line-left>ul>li{float:left;}
+        .line-left>ul>li>a{position:relative; color:#888;}
+        .line-left>ul>li>a:after{
+            width:1px;
+            height:13px;
+            background:#888;
+            display:block;
+            position:absolute;
+            content:'';
+            left:0;
+            top:11px;
+        }
+        .line-left>ul>li:first-child>a:after{width:0;}
+
+        .line-right{float:right;}
+
+        .sns-box{clear:both; margin-top:110px; margin-bottom:140px;}
+        .sns-box>ul{ width:170px; height:40px; margin:0 auto; }
+        .sns-box>ul>li{float:left;}
+        .sns-box>ul>li:nth-child(2){margin:0 25px;}
+
+        .sns-box>ul>li>a:hover img{transform: scale(1.1);}
+        .sns-box>ul>li>a>img{transition: 0.3s;}
