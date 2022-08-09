@@ -11,13 +11,13 @@ a{text-decoration:none;color:#fff;}
 ul{list-style-type:none; margin:0; padding:0;}
     
     #wrapper{
-        width:1440px;
+        width:100%;
         margin:0 auto;
     }
     #loginpage #header, #signuppage #header{position:relative;}
     #mainpage #wrapper{overflow:hidden;}
     #mainpage #header {
-        width:1217px;
+        width:83%;
         height:110px;
         background:black;
         float:right;
@@ -26,13 +26,14 @@ ul{list-style-type:none; margin:0; padding:0;}
     }
     #mainpage #nav{
         height: 100%;
+        width:17%;
         float:left;
         position:fixed;
         border-right:1px solid #565ca8;
         font-weight: 900;
     }
     #mainpage #contents{
-        width:1209px;
+        width:83%;
         float:right;
     }
 
@@ -92,11 +93,11 @@ ul{list-style-type:none; margin:0; padding:0;}
     .new-music>ul>li{float:left; font-size:15px; margin: 30px 44px 20px 0px;}
     .new-music>ul>li:last-child{margin-right:0px; margin-top:11px;}
     .new-music>ul>li>a:hover p{color:#985ea3;}
-    .new-music>ul>li:nth-child(1):hover{background:url(../images/최신음악-1\ 흐림.png)no-repeat 0 0;}
-    .new-music>ul>li:nth-child(2):hover{background:url(../images/최신음악-2\ 흐림.png)no-repeat 0 0;}
-    .new-music>ul>li:nth-child(3):hover{background:url(../images/최신음악-3\ 흐림.png)no-repeat 0 0;}
-    .new-music>ul>li:nth-child(4):hover{background:url(../images/최신음악-4\ 흐림.png)no-repeat 0 0;}
-    .new-music>ul>li:nth-child(5):hover{background:url(../images/최신음악-5\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(1):hover{background:url(mainpage-images/최신음악-1\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(2):hover{background:url(mainpage-images/최신음악-2\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(3):hover{background:url(mainpage-images/최신음악-3\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(4):hover{background:url(mainpage-images/최신음악-4\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(5):hover{background:url(mainpage-images/최신음악-5\ 흐림.png)no-repeat 0 0;}
     .new-music>ul>li>a:hover img{opacity: 0.0;}
     
     .new-music ul p{text-align:center; margin:0;}
@@ -177,11 +178,11 @@ ul{list-style-type:none; margin:0; padding:0;}
 
     /*인디온 소개*/
     .introduce {margin-top:50px; }
-    .introduce div>a:hover img{transform: scale(1.05);}
+    .introduce div>a:hover img{transform: scale(0.95);}
     .introduce div>a>img{ transition:0.5s;}
 
     /*사운드 바*/
-    .music{float:left; width:450px; overflow:hidden; position:relative; font-size:15px; margin:3px;}
+    .music{float:left; width:30%; overflow:hidden; position:relative; font-size:15px; margin:3px;}
     
     .music>a{float:left;}
     .music>a>img{margin-left:15px;}
@@ -191,12 +192,12 @@ ul{list-style-type:none; margin:0; padding:0;}
     .music>p:nth-child(3){color:#ccc; font-size:13px;}
 
     
-    .play{margin:3px auto; width:620px;}
+    .play{margin:3px auto; width:30%;}
     .play>ul{margin:0 auto; width:560px;line-height:50px;}
-    .play>ul>li{float:left; display:inline-block; margin:0 40px;}
+    .play>ul>li{float:left; display:inline-block; margin:0 20px;}
     .play>ul>li>a img{vertical-align: middle;}
 
-    .option{float:right; width:350px; margin:3px 10px; font-size:13px;}
+    .option{float:right; width:30%; margin:3px 10px; font-size:13px;}
     .option>ul{float:right; line-height: 50px;}
     .option>ul>li{float:left; display:inline-block; margin:0 15px; }
     .option>ul>li:nth-child(2){margin-right:0;}
