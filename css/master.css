@@ -93,8 +93,8 @@ ul{list-style-type:none; margin:0; padding:0;}
     .new-music>ul>li{float:left; font-size:15px; margin: 30px 44px 20px 0px;}
     .new-music>ul>li:last-child{margin-right:0px; margin-top:11px;}
     .new-music>ul>li>a:hover p{color:#985ea3;}
-    .new-music>ul>li:nth-child(1):hover{background:url(mainpage-images/최신음악-1\ 흐림.png)no-repeat 0 0;}
-    .new-music>ul>li:nth-child(2):hover{background:url(mainpage-images/최신음악-2\ 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(1):hover{background:url(mainpage-images/최신음악-1 흐림.png)no-repeat 0 0;}
+    .new-music>ul>li:nth-child(2):hover{background:url(mainpage-images/최신음악-2 흐림.png)no-repeat 0 0;}
     .new-music>ul>li:nth-child(3):hover{background:url(mainpage-images/최신음악-3\ 흐림.png)no-repeat 0 0;}
     .new-music>ul>li:nth-child(4):hover{background:url(mainpage-images/최신음악-4\ 흐림.png)no-repeat 0 0;}
     .new-music>ul>li:nth-child(5):hover{background:url(mainpage-images/최신음악-5\ 흐림.png)no-repeat 0 0;}
